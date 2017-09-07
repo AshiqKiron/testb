@@ -2,7 +2,7 @@
 <?php
 
 // parameters
-$hubVerifyToken = 'Bot-test-489321391420987';
+$hubVerifyToken = 'EAAEtRfZBUlZAEBAABEwCy1SaZA7nlFuQZAqxfwrbupHLBxU5dB67aZCyc3tZByZBU3khWGbK3lXbfUXnd2lmqQLqrYjgOLEXznyUwzZCSGmOVlq8O2fhjIwxMG3SrvlvpHKkHLPULJZCVToN8NBTD3UcQh3bBdONhHlIWFBjsO5vXyMGY2g2HGASr';
 $accessToken =   "accesstoken";
 // check token at setup
 if ($_REQUEST['hub_verify_token'] === $hubVerifyToken) {
