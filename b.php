@@ -1,8 +1,9 @@
 
 <?php
+
 // parameters
 $hubVerifyToken = 'Bot-test-489321391420987';
-$accessToken =   "EAAEtRfZBUlZAEBAA1Wi5TfXL2OBg6NOHtdWUnjTEEk8Qxfe3XGIRyiUpcspFmfKZCv43UZBbD9iaVOqqO9c5LSzxZAZC2OUqDXvnPbbTOvQNx0rTZAIPgDVziin7ZCdoIh3dUeupDq1oQAduEYkFp3olYFZBKOFUQRlgGCtHF0ThUXa6r353jexIJ";
+$accessToken =   "EAAEtRfZBUlZAEBAEViRHcnzI7jaBaIw2dICuzII6JgW8IdwOBNBRb7UVneeLUlcWdeEQedlE6h3MQoZCjRuEHu3ySZAQp8VgQJ6dimGBY945cYTPBp5YdLX31N5EymmYjSTZA9ZAZBZCmTj92CDLebYE4E3gaYHu87xtnTNpHWBFdZBDh1pD4BB51";
 // check token at setup
 if ($_REQUEST['hub_verify_token'] === $hubVerifyToken) {
   echo $_REQUEST['hub_challenge'];
