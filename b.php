@@ -1,8 +1,8 @@
 
 <?php
 // parameters
-$hubVerifyToken = 'cloudwaysschool';
-$accessToken =   "EAxxxxxxxxxxxqgBAKWAgizvoHnQLZBR7ZxxxxxxxxxxxxxxxxxxxxxxxxxxxxxptYSymSdocFFCp1ink3EHRVMrCSxxxxxxxxxxxxxxxxxxxxwMZApStyA8GbqAxxxxxxxxxxxxxxxxxxxxxxxxxxx9R6QttFVyNS4ZBurwZDZD";
+$hubVerifyToken = 'Bot-test-489321391420987/';
+$accessToken =   "EAAEtRfZBUlZAEBAA1Wi5TfXL2OBg6NOHtdWUnjTEEk8Qxfe3XGIRyiUpcspFmfKZCv43UZBbD9iaVOqqO9c5LSzxZAZC2OUqDXvnPbbTOvQNx0rTZAIPgDVziin7ZCdoIh3dUeupDq1oQAduEYkFp3olYFZBKOFUQRlgGCtHF0ThUXa6r353jexIJ";
 // check token at setup
 if ($_REQUEST['hub_verify_token'] === $hubVerifyToken) {
   echo $_REQUEST['hub_challenge'];
@@ -30,3 +30,13 @@ if(!empty($input)){
 $result = curl_exec($ch);
 }
 curl_close($ch);
+
+
+if($messageText == "hi") {
+    $answer = "Hello";
+}
+//send message to facebook bot
+$response = [
+    'recipient' => [ 'id' => $senderId ],
+    'message' => [ 'text' => $answer ]
+];
