@@ -3,7 +3,7 @@
 
 // parameters
 $hubVerifyToken = 'Bot-test-489321391420987';
-$accessToken =   "EAAEtRfZBUlZAEBAEViRHcnzI7jaBaIw2dICuzII6JgW8IdwOBNBRb7UVneeLUlcWdeEQedlE6h3MQoZCjRuEHu3ySZAQp8VgQJ6dimGBY945cYTPBp5YdLX31N5EymmYjSTZA9ZAZBZCmTj92CDLebYE4E3gaYHu87xtnTNpHWBFdZBDh1pD4BB51";
+$accessToken =   "accesstoken";
 // check token at setup
 if ($_REQUEST['hub_verify_token'] === $hubVerifyToken) {
   echo $_REQUEST['hub_challenge'];
