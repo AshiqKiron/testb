@@ -2,7 +2,7 @@
 
 /* validate verify token needed for setting up web hook */ 
 if (isset($_GET['hub_verify_token'])) { 
-    if ($_GET['hub_verify_token'] === 'YOUR_SECRET_TOKEN') {
+    if ($_GET['hub_verify_token'] === 'vertok') {
         echo $_GET['hub_challenge'];
         return;
     } else {
